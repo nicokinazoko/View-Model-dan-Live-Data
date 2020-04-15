@@ -1,4 +1,4 @@
-package com.example.cobafragment;
+package com.example.cobafragment.view.fragment;
 
 import android.os.Bundle;
 
@@ -8,13 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.cobafragment.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TvshowFragment extends Fragment {
+public class MovieFragment extends Fragment {
 
-    public TvshowFragment() {
+    public MovieFragment() {
         // Required empty public constructor
     }
 
@@ -23,6 +25,6 @@ public class TvshowFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tvshow, container, false);
+        return inflater.inflate(R.layout.fragment_movie, container, false);
     }
 }

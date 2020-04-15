@@ -1,4 +1,4 @@
-package com.example.cobafragment;
+package com.example.cobafragment.view.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
+import com.example.cobafragment.view.fragment.MovieFragment;
+import com.example.cobafragment.R;
+import com.example.cobafragment.view.fragment.TvshowFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
