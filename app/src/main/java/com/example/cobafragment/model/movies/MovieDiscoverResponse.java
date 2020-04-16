@@ -1,5 +1,6 @@
 package com.example.cobafragment.model.movies;
 
+import java.util.ArrayList;
 import java.util.List;
 import com.google.gson.annotations.SerializedName;
 
@@ -12,7 +13,7 @@ public class MovieDiscoverResponse{
 	private int totalPages;
 
 	@SerializedName("results")
-	private List<MovieDiscoverResultsItem> results;
+	private ArrayList<MovieDiscoverResultsItem> results;
 
 	@SerializedName("total_results")
 	private int totalResults;
@@ -33,11 +34,11 @@ public class MovieDiscoverResponse{
 		return totalPages;
 	}
 
-	public void setResults(List<MovieDiscoverResultsItem> results){
+	public void setResults(ArrayList<MovieDiscoverResultsItem> results){
 		this.results = results;
 	}
 
-	public List<MovieDiscoverResultsItem> getResults(){
+	public ArrayList<MovieDiscoverResultsItem> getResults(){
 		return results;
 	}
 

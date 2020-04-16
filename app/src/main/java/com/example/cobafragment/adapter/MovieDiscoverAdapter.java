@@ -61,7 +61,7 @@ public class MovieDiscoverAdapter extends RecyclerView.Adapter<MovieDiscoverAdap
 //      opsi kedua
         holder.tvRate.setText(String.valueOf(movieDiscoverResultsItems.get(position).getVoteAverage()));
 
-        
+
 
     }
 
