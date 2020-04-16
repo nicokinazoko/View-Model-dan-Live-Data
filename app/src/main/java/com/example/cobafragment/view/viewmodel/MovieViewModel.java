@@ -1,5 +1,7 @@
 package com.example.cobafragment.view.viewmodel;
 
+import android.util.Log;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -41,7 +43,8 @@ public class MovieViewModel extends ViewModel {
 
             @Override
             public void onFailure(Call<MovieDiscoverResponse> call, Throwable t) {
-
+                t.getMessage();
+                Log.d("1234", t.getMessage());
             }
         });
     }
