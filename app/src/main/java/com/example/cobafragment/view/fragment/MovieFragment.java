@@ -63,7 +63,7 @@ public class MovieFragment extends Fragment {
         movieViewModel.setMovieDiscover();
         movieViewModel.getMovieDiscover().observe(this,getMovieDiscover);
 
-
+        rvMovieAdapter.setAdapter(movieDiscoverAdapter);
     }
 
     private Observer <ArrayList<MovieDiscoverResultsItem>> getMovieDiscover = new Observer<ArrayList<MovieDiscoverResultsItem>>() {
@@ -74,7 +74,7 @@ public class MovieFragment extends Fragment {
             {
                 movieDiscoverAdapter.setData(movieDiscoverResultsItems);
 //                Log.d("1234","Ada Datanya");
-                rvMovieAdapter.setAdapter(movieDiscoverAdapter);
+//                rvMovieAdapter.setAdapter(movieDiscoverAdapter);
             }
         }
     };
