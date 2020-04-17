@@ -23,7 +23,8 @@ public class MovieDiscoverAdapter extends RecyclerView.Adapter<MovieDiscoverAdap
 
     private ArrayList<MovieDiscoverResultsItem> movieDiscoverResultsItems       =   new ArrayList<>();
     private Context context;
-    private static String BASE_IMAGE_URL                                        =   "https://image.tmbdb.org/t/p/w185/";
+//    private static String BASE_IMAGE_URL                                        =   "http://image.tmbdb.org/t/p/w185/";
+    private static String BASE_IMAGE_URL                                        =   "https://image.tmdb.org/t/p/w185/";
 
     public MovieDiscoverAdapter(Context context) {
         this.context = context;
